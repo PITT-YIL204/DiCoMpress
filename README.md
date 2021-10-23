@@ -34,7 +34,11 @@ Further Application
 It is feasible to implement this discussed method on blockchain. For instance, we may set up two blockchains. One saves the integrated chain objects, and another chain saves similarity hash of image data, meta data of the DICOM file, other user data, and a reference to the other blockchain the chain object it depends on with a key to fetch its private image. To save a new image, the algorithm fetch blocks with adjacent similarity hash and the problem reduces to find the most efficient way to encode. This is actually an travelling salesman problem(to find the shortest path traversing all nodes), and indeed it can be solved, e.g. using simulated annealing. 
 The other direction is rather simple. If a patient or a health-care provider need the DICOM image file, they simply use the patient's private key to ask the algorithm communicate to the other blockchain, and then the blockchain with chain object data will decode one's image using the key provided and send back the reconstructed image.
 
-![picture alt](https://raw.githubusercontent.com/PITT-YIL204/DiCoMpress/master/demo/blockchain.png "Blockchain Configuration")
+<!-- ![picture alt](https://raw.githubusercontent.com/PITT-YIL204/DiCoMpress/master/demo/blockchain.png "Blockchain Configuration")
+ --><figure>
+  <img src="https://raw.githubusercontent.com/PITT-YIL204/DiCoMpress/master/demo/blockchain.png" alt="picture" style="width:100%">
+  <figcaption>Blockchain Configuration</figcaption>
+</figure>
 
 With this configuration, not only the data storage is saved on health-care providers' side, but also enables a secured, portable, lightweight storage for everyone's medical records. 
 

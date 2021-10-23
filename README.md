@@ -9,7 +9,7 @@ Background
 ----------
 Health-care providers have to store a rapid growing collection of patients' medical records. And medical images occupies a big portion of the total size. In addition, The recent popularity of blockchain raises probabilty to serve medical records through similar fashion. However, blockchain as database works clumpsily, and thus is very sensitive to data size. Our team works to compress DICOM image files to a much smaller size and tries to propose a feasible way to serve on blockchain.
 
-methodology
+Methodology
 -----------
 There are numerous image taken in the hospital everyday. But since image are usually taken about certain part of human body, great amount of similar images are produced. The core of our project use this property to compress data: encode images as predictions from a similar one. This way, a set of similar immages can be stored as a chain object contains the first original image and following predictions. Then, the original images can be reconstructed by performing such predictions stored in the chain object.
 

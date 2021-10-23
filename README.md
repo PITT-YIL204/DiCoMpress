@@ -37,7 +37,7 @@ The other direction is rather simple. If a patient or a health-care provider nee
 <!-- ![picture alt](https://raw.githubusercontent.com/PITT-YIL204/DiCoMpress/master/demo/blockchain.png "Blockchain Configuration")
  --><figure>
   <img src="https://raw.githubusercontent.com/PITT-YIL204/DiCoMpress/master/demo/blockchain.png" alt="picture" style="width:100%">
-  <figcaption>Blockchain Configuration</figcaption>
+  <figcaption style="text-align:center">Blockchain Configuration</figcaption>
 </figure>
 
 With this configuration, not only the data storage is saved on health-care providers' side, but also enables a secured, portable, lightweight storage for everyone's medical records. 

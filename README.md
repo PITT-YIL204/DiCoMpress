@@ -136,3 +136,8 @@ If you follow above instructions, the resulted files in `build` directory should
 
 	  12M used in 2 directories, 38 files
 
+
+----
+*Team: BadPineapple*
+
+![picture alt](https://raw.githubusercontent.com/PITT-YIL204/DiCoMpress/master/demo/BadPineapple.png)

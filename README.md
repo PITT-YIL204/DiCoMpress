@@ -54,15 +54,17 @@ This implementation demonstrates the compressing and reconstructing process of s
 
 ### Requirement ###
 * Tested only on Windows10
-* MinGW
-* Python-3
-    * pydicom
-    * numpy
-    * matplotlib
-* vapoursynth
-    * libfmtconv
-    * libffms2
-* x265
+* [MinGW](https://osdn.net/projects/mingw/)
+* [Python-3](https://www.python.org/)
+    * [pydicom](https://pydicom.github.io/)
+    * [numpy](https://numpy.org/)
+    * [matplotlib](https://matplotlib.org/)
+* [vapoursynth](http://www.vapoursynth.com/)
+    * [libfmtconv](https://github.com/EleonoreMizo/fmtconv)
+    * [libffms2](https://github.com/FFMS/ffms2)
+* [x265](https://www.videolan.org/developers/x265.html)
+
+Above tools are used only for the sake of simplicity. In real case, for example, we may use a specific encoder designed for such task, instead of x265, to achieve better result.
 
 ### Compilation ###
 It is easy to compile this demo source. We use `make` command come with MingW:

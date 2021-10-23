@@ -1,0 +1,18 @@
+# build directory #
+###################
+build/
+
+# Compiled source #
+###################
+*.exe
+*.o
+
+# OS generated files #
+######################
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db

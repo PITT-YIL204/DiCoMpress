@@ -51,23 +51,28 @@ This implementation demonstrates the compressing and reconstructing process of s
 
 ### Compilation ###
 It is easy to compile this demo source. We use `make` command come with MingW:
+
 	% cd \<repository path\>
 	% make
 
 Now, there will be a `build` directory in the top directory, in which there are executable files needed for demonstration.
 Lastly, you have to manually move the `libvsmat.dll` file to vapoursynth's plugin directory(you will need administrator's permission to do so). Alternatively, you can type:
+
 	% mv build/libvsmat.dll \<vapoursynth plugin path\>
 
 ### Usage ###
 First, you move several similar DICOM images to the `build` directory. If you do not have, there are eight files in the `sample` directory you may use. Then the command:
+
 	% .\encode.exe
-compresses the images in the `build` directory as the methodology section described, and compressed data are presented in the `encoded` subdirectory. \
+compresses the images in the `build` directory as the methodology section described, and compressed data are presented in the `encoded` subdirectory.
 
 To extract the last image (for the sake of time, this demo only support extraction of last DICOM file using following command. But it is actually easy to do it for every images. in fact, you may tweak the source code just a little bit to achieve such result), you type as following:
+
 	% .\decode.exe \<basename of your original DICOM file, e.g. 17 for 17.dcm\>
 This will reconstruct your last dicom file to the `decoded` subdirectory.
 
 To see the images, you may you following python command:
+
 	% py dcmshow.py \<your DICOM file\>
 ### result ###
 If you follow above instructions, the resulted files in `build` directory should be like as below:

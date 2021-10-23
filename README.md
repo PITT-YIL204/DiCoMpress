@@ -16,8 +16,11 @@ There are numerous image taken in the hospital everyday. But since image are usu
 Performance
 -----------
 
-![picture alt](https://raw.githubusercontent.com/PITT-YIL204/DiCoMpress/master/demo/original.png "Original DICOM Image")
-![picture alt](https://raw.githubusercontent.com/PITT-YIL204/DiCoMpress/master/demo/reconstructed.png "Reconstructed DICOM Image")
+![picture alt](https://raw.githubusercontent.com/PITT-YIL204/DiCoMpress/master/demo/original.png)
+*Original DICOM Image*
+
+![picture alt](https://raw.githubusercontent.com/PITT-YIL204/DiCoMpress/master/demo/reconstructed.png)
+*Reconstructed DICOM Image*
 
 Above is the comparison of the original image and reconstructed one. This demo works on eight similar dcm images and the comparison is about the eighth image on chain. Overtly, the reconstructed image retains detailed feature and has no visual difference with the original one.
 In theory, larger chain size provides better compression ratio. It is worth to note that image could be not as precise as original when the chain grows too big. One naive solution is to limit the chain size.

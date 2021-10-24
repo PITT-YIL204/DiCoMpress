@@ -2,7 +2,7 @@ Image Compression for Portable Medical Records<a name="TOP"></a>
 ==============================================
 
 ----
-This is a demonstration repository for The (Pitt Challenge)[https://pittchallenge.com/] project about medical image compression.
+This is a demonstration repository for The [Pitt Challenge](https://pittchallenge.com/) project about medical image compression.
 
 
 Background

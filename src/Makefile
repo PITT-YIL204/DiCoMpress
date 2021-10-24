@@ -9,7 +9,7 @@ CFLAG := $(INCLUDE) $(LIB) $(WARNINGS) $(OPTIMIZE) $(CSTD)
 VSLIB := -lvapoursynth -lvsscript
 
 
-exports := encode.exe decode.exe decmat.exe libvsmat.dll encode.vpy image.vpy dcmrc.py write_mat.py save_meta.py dcmshow.py
+exports := encode.exe decode.exe decmat.exe libvsmat.dll encode.vpy image.vpy dcmrc.py write_mat.py save_meta.py dcmshow.py dcmshow_diff.py
 .PHONY: all encoder decoder
 
 all: encoder decoder cexport

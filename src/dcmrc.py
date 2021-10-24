@@ -12,16 +12,12 @@ f = open(sys.argv[1]+".mat","r")
 arr = list(map(lambda x: float(x), f.readline().split()))
 image2d = np.array(arr, dtype=float)
 f.close()
-# print(image2d)
-# print(np.amin(image2d))
+
 f = open(sys.argv[2]+".max","r")
 vmax = int(f.readline().strip())
 image2d -= np.amin(image2d)
 image2d *= vmax
 image2d = np.ceil(image2d).astype(np.uint16)
-
-
-
 
 meta = pydicom.Dataset()
 meta.MediaStorageSOPClassUID = pydicom._storage_sopclass_uids.MRImageStorage
@@ -41,16 +37,12 @@ f = open(sys.argv[2]+".meta","r")
 lines = f.readlines()
 for line in lines[:-2]:
     [attr,valstr] = line.split(" ",1)
-    # print(json.loads(valstr))
     setattr(ds,attr,json.loads(valstr))
 
 pydicom.dataset.validate_file_meta(ds.file_meta, enforce_standard=True)
 
 ds.PixelData = image2d.tobytes()
 
-
-# for i in range(ds.Rows * ds.Columns):
-#     print(f"{ds.PixelData[i]}", end=' ')
 dn = os.path.dirname(sys.argv[1])
 bn = os.path.basename(sys.argv[1])
 ds.save_as(os.path.join(dn,"decoded",bn+".dcm"))

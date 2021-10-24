@@ -11,7 +11,11 @@ Health-care providers have to store a rapid growing collection of patients' medi
 
 Methodology
 -----------
-There are numerous image taken in the hospital everyday. But since image are usually taken about certain part of human body, great amount of similar images are produced. The core of our project use this property to compress data: encode images as predictions from a similar one. This way, a set of similar images can be stored as a chain object contains the first original image and following predictions. Then, the original images can be reconstructed by performing such predictions stored in the chain object.
+There are numerous image taken in the hospital everyday. But since image are usually taken about certain part of human body, great amount of similar images are produced. The core of our project use this property to compress data: encode images as predictions from a similar one.
+
+
+
+This way, a set of similar images can be stored as a chain object contains the first original image and following predictions. Then, the original images can be reconstructed by performing such predictions stored in the chain object.
 
 Performance
 -----------

@@ -45,3 +45,4 @@ clean:
 	rm -f *.o
 	rm -f exports
 	rm -f cexport.exe
+	rm -f libvsmat.dll

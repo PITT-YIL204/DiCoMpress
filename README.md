@@ -33,7 +33,13 @@ In theory, larger chain size provides better compression ratio. It is worth to n
 
 Losslessness
 ------------
-As mentioned in the previous section, the reconstructed image is not lossless. However, we found that the  difference can surely be represented by a sparse matrix, i.e. we are able to compress the difference between two consequent images with square root of original image size.
+As mentioned in the previous section, the reconstructed image is not lossless. With our setup for demonstration(using lossy parameters on encoder), the difference is still neglectable -- about 3% difference at maximum. Following image is an visualization of this difference; obviously, it does not blur the detail feature of the original image.  
+
+*difference between original and reconstructed images*
+
+![picture alt](https://raw.githubusercontent.com/PITT-YIL204/DiCoMpress/master/demo/diff.png)
+
+On top of that, we found that the difference of features can surely be represented by a sparse matrix, i.e. we are able to compress the difference between two consequent images with square root of original image size, e.g. storing with [Yale format](https://en.wikipedia.org/wiki/Sparse_matrix#Compressed_sparse_row_(CSR,_CRS_or_Yale_format)).
 
 Further Application
 -------------------
@@ -91,6 +97,16 @@ This will reconstruct your last dicom file to the `decoded` subdirectory.
 To see the images, you may you following python command:
 
 	% py dcmshow.py <your DICOM file>
+
+Besides, following python script is useful to visualize the difference between two dicom images"
+
+	% py .\dcmshow_diff.py <DICOM file1> <DICOM file2>
+
+This command will also output the maximum difference between two images. In our case, we have following:
+
+	% py .\dcmshow_diff.py .\17.dcm .\decoded\17.dcm
+	maximum percent difference: 0.028788881535407016
+
 ### result ###
 If you follow above instructions, the resulted files in `build` directory should be like as below:
 

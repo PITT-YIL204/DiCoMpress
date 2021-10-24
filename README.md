@@ -162,4 +162,4 @@ If you follow above instructions, the resulted files in `build` directory should
 ----
 *Team: BadPineapple*
 
-![picture alt](https://raw.githubusercontent.com/PITT-YIL204/DiCoMpress/master/demo/BadPineapple.png)
+![picture alt](https://raw.githubusercontent.com/PITT-YIL204/DiCoMpress/master/BadPineapple.png)
